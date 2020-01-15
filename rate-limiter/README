@@ -1,0 +1,11 @@
+to build:
+make
+
+to run throttler:
+./throttler tc1.txt
+
+to run unit tests
+./ut_rate_limiter
+
+clean:
+make clean
