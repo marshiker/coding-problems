@@ -1,6 +1,3 @@
-BUILD:
-untar the file
-run make
 
 RUN
 ./merge input-dir-path output-file-path
