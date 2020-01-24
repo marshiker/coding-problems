@@ -9,13 +9,11 @@ example:
 
 Time Complexity:
 k files with N lines of data
-O(k*K*N)
+O(kN(logk))+O(kN) = O(kN(logk))
 first input processing checks for sortedness O(kN)
-second input processing to put lines into minheap and extract minimum O(kN(k+logk)) O(k^2N)
+second input processing to put lines into minheap and extract minimum O(kN(logk))
 minheap will have atmost k elements at a time
-there is a linear search performed on a vector of k to check for duplicates
 
 Space complexity:
 input files are not fully loaded into memory at same time,read line by line as needed
-space is O(k), data structures allocated or of size k 
-output buffer constant size is 256*1000 bytes, after fills written to file
+space is O(k), data structures allocated or of size k
